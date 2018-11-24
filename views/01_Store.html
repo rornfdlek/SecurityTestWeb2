@@ -1,0 +1,59 @@
+<br>
+<style type="text/css">
+#store_ul {
+    margin: 0;
+    padding: 0;
+    margin-left: 15px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.item_name {
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.item_price {
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fb0000;
+    display: inline-block;
+}
+
+.put_item_into_cart {
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+    font-size: 0.8em;
+    font-weight: bold;
+    display: inline-block;
+}
+
+#store_li img {
+    float: left;
+    width: 200px;
+    margin: 0 15px 0 0;
+}
+
+#store_li p {
+    font: 200 11px/1.5 Helvetica, Verdana, sans-serif;
+}
+
+#store_li {
+    padding: 10px;
+    overflow: auto;
+}
+
+#store_li:hover {
+    background: #eee;
+    cursor: pointer;
+}
+</style>
+<div id="store_contents">
+    <ul id="store_ul">
+        {{{item_list}}}
+    </ul>
+</div>

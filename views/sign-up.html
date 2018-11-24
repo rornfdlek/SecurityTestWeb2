@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Standard Meta -->
+  <meta charset="utf-8" />
+  <title>Sign-Up</title>
+  <link rel="stylesheet" type="text/css" href="../CSS/login.css">
+  <link href="../Font-Awesome/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <script type="text/javascript" src="../Component/jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function() {
+      $('#sign-up_button').click(function() {
+          $('#sign-up_form').submit();
+      });
+  });
+  </script>
+
+</head>
+
+<body>
+  <div class="ui middle aligned center aligned grid">
+    <div class="column">
+    <h2 class="ui orange image header">
+    <img src="../Images/logo_grey_background.png" class="image">
+    <div class="content">
+      Make your own account
+    </div>
+  </h2>
+            <form class="ui large form" id="sign-up_form" action="/user/sign_up" method="post">
+                <div class="ui stacked segment">
+                    <div class="Sign-Up Component">
+                            <input type="text" name="usr_name" placeholder="User Name">
+                            <input type="text" name="email" placeholder="E-mail address">
+                            <input type="password" name="password" placeholder="Password">
+                            <!-- <input type="password" name="password_2" placeholder="Verify Password"> -->
+                        </div>
+                    </div>
+                    <div class="Login Component">
+                        <div class="ui fluid large orange submit button" id="sign-up_button">Sign Up !!!</div>
+                    </div>
+                </div>
+                <!-- <div class="ui error message"></div> -->
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

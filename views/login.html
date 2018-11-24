@@ -1,0 +1,77 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="../../Component/Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../Component/Font-Awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../../CSS/custom.css" rel="stylesheet"/>
+    <script src="../../Component/jquery-3.2.0.min.js"></script>
+    <script src="../Component/Bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script>
+    $(document).ready(function() {
+        $('form input').keydown(function(e) {
+            if (e.keyCode == 13) {
+                $('#login_form').submit();
+            }
+        });
+    });
+    </script>
+
+</head>
+<body id="login-page">
+    <div class="container-fluid" id="text_jumbotron_container" style="margin-top: 1.5em">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="jumbotron" text-center style="padding-top: 0.5em; padding-bottom: 0.5em;">
+                    <h2> Test website !</h2>
+                    <p> This website was made by wishfree. To test and understand the vulnerabilities of web applications.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4" style="margin-bottom:1em;">
+                <div class="col-md-12" style="text-align: center;">
+                    <h3 style="font-weight: bold; color:#602320;">Login to your account</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4" style="padding-right: 1em; padding-left: 1em;">
+                <div class="stw-jumbotron jumbotron" text-center>
+                    <form class="form-horizontal" role="form" action="/user/login" method="post">
+                        <div class="form-group">
+                            <input type="email" class="form-control input-lg" name="email" id="email" placeholder="E-mail address" style="margin-top: 0.6em; margin-bottom: 0.6em"/>
+                            <input type="password" class="form-control input-lg" name="password" id="pwd" placeholder="Password" style="margin-bottom: 0.6em"/>
+                            <button type="submit" class="stw-button btn btn-default btn-block"> <h4> Login</h4> </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4" style="padding-right: 1em; padding-left: 1em;">
+                <div class="stw-jumbotron jumbotron">
+                    <h4>New to us? <a href="/user/sign_up" class="stw-link">Sign Up</a></h4>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script href="../Component/Bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+
+
+
+
+
+
+
+
+</html>
